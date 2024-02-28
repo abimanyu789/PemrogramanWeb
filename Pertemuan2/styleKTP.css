@@ -1,0 +1,35 @@
+.content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+table{
+    
+    height: 400px;
+    padding: 1em;
+    width: 750px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    border: 1;
+    border-style: ridge;
+    border-radius: 1em;
+    background-image: url(../img/bgKtp.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.img{
+    padding-left: 10px;
+    height: 230px;
+    width: 170px;
+}
+.pos{
+    font-size: large;
+    font-weight: bold;
+}
+.pad{
+    padding-bottom: 20px;
+
+}
+.alamat{
+    padding-left: 30px;
+}
