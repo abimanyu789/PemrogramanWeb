@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styleTable.css">
-    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="styleTable.css"> <!-- Memuat stylesheet CSS untuk tabel -->
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
         $(document).ready(function(){
-            //menambah baris
+            // Fungsi untuk menambah baris pada tabel
             $(".add-row").click(function(){
-                var name = $("#name").val(); 
-                var email = $("#email").val();
-                var markup = "<tr><td><input type='checkbox' name = 'record'></td><td>"
-                    + name + "</td><td>" + email + "</td></tr>";
-                $("table tbody").append(markup);
+                var name = $("#name").val(); // Mengambil nilai dari input dengan ID "name"
+                var email = $("#email").val(); // Mengambil nilai dari input dengan ID "email"
+                var markup = "<tr><td><input type='checkbox' name='record'></td><td>" 
+                    + name + "</td><td>" + email + "</td></tr>"; // Markup untuk baris baru dalam tabel
+                $("table tbody").append(markup); // Menambahkan markup ke dalam elemen tbody pada tabel
             });
 
-            //menghapus baris yang di centang
-            $(".delete-zow").click(function(){
+            // Fungsi untuk menghapus baris yang dicentang
+            $(".delete-row").click(function(){
                 $("table tbody").find('input[name="record"]').each(function(){
-                    if ($(this).is(":checked")) {
-                        $(this).parents("tr").remove();
+                    if ($(this).is(":checked")) { // Jika checkbox dicentang
+                        $(this).parents("tr").remove(); // Hapus baris yang mengandung checkbox tersebut
                     }
                 });
             });
@@ -27,26 +27,26 @@
 </head>
 <body>
     <form>
-        <input type="text" id="name" placeholder="Name">
-        <input type="text" id="email" placeholder="Email Address">
-        <input type="button" class="add-row" value="Add Row">
+        <input type="text" id="name" placeholder="Name"> <!-- Input untuk nama -->
+        <input type="text" id="email" placeholder="Email Address"> <!-- Input untuk alamat email -->
+        <input type="button" class="add-row" value="Add Row"> <!-- Tombol untuk menambah baris -->
     </form>
     <table>
         <thead>
             <tr>
-                <th>Select</th>
-                <th>Name</th>
-                <th>Email</th>
+                <th>Select</th> <!-- Kolom untuk memilih baris -->
+                <th>Name</th> <!-- Kolom untuk nama -->
+                <th>Email</th> <!-- Kolom untuk alamat email -->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="record"></td>
-                <td>Tony Stark</td>
-                <td>tonystark@mail.com</td>
+                <td><input type="checkbox" name="record"></td> <!-- Checkbox untuk memilih baris -->
+                <td>Tony Stark</td> <!-- Nama pada baris awal -->
+                <td>tonystark@mail.com</td> <!-- Alamat email pada baris awal -->
             </tr>
         </tbody>
     </table>
-    <button type="button" class="delete-zow">Delete Row</button>
+    <button type="button" class="delete-row">Delete Row</button> <!-- Tombol untuk menghapus baris -->
 </body>
 </html>

@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
-        $(document).ready(function() { 
-            $("#btnl").click(function() { 
-                alert($("#test1").text())
+        $(document).ready(function() { // Fungsi yang dieksekusi setelah dokumen HTML selesai dimuat
+            $("#btnl").click(function() { // Ketika tombol dengan ID "btnl" diklik
+                alert($("#test1").text()); // Menampilkan teks dari elemen dengan ID "test1" dalam sebuah alert
             });
-            $("#btn2").click(function() { 
-                alert($("#test2").html())
+            $("#btn2").click(function() { // Ketika tombol dengan ID "btn2" diklik
+                alert($("#test2").html()); // Menampilkan teks HTML dari elemen dengan ID "test2" dalam sebuah alert
             });
-            $("#btn3").click(function() { 
-                alert($("#test3").val())
+            $("#btn3").click(function() { // Ketika tombol dengan ID "btn3" diklik
+                alert($("#test3").val()); // Menampilkan nilai dari elemen input dengan ID "test3" dalam sebuah alert
             });
         });
     </script>
 </head>
 <body>
-    <p id="test1">This is the first paragraph.</p>
-    <p id="test2">This is <b> another </b> paragraph.</p>
-    <p>Your Name: <input type="text" id="test3"></p>
-    <button id="btnl">Get Text</button>
-    <button id="btn2">Get HTML</button>
-    <button id="btn3">Get Value</button>
+    <p id="test1">This is the first paragraph.</p> <!-- Paragraf pertama -->
+    <p id="test2">This is <b> another </b> paragraph.</p> <!-- Paragraf kedua dengan elemen bold -->
+    <p>Your Name: <input type="text" id="test3"></p> <!-- Input untuk nama -->
+
+    <button id="btnl">Get Text</button> <!-- Tombol untuk mendapatkan teks -->
+    <button id="btn2">Get HTML</button> <!-- Tombol untuk mendapatkan teks HTML -->
+    <button id="btn3">Get Value</button> <!-- Tombol untuk mendapatkan nilai input -->
 </body>
 </html>

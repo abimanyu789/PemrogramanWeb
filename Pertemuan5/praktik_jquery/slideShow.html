@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css"> <!-- Memuat stylesheet untuk slideshow -->
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
+    <script>
+        var i = 0; // Variabel untuk melacak nomor gambar dalam slideshow
+        
+        // Fungsi yang akan dieksekusi setelah dokumen HTML selesai dimuat
+        $(document).ready(function () { 
+            $('.slidertitle, #slider img').hide(); // Menyembunyikan judul gambar dan gambar dalam slideshow
+            showNextImage(); // Memanggil fungsi untuk menampilkan gambar selanjutnya
+            setInterval('showNextImage()', 3000); // Mengatur interval untuk menampilkan gambar selanjutnya setiap 3 detik
+        });
+        
+        // Fungsi untuk menampilkan gambar selanjutnya dalam slideshow
+        function showNextImage() {
+            i++; // Menambah nilai variabel i
+            
+            // Menampilkan gambar dengan efek fade in dan fade out
+            $('#sliderImage' + i).appendTo("#slider").fadeIn(1100).delay(1100).fadeOut(1100);
+            
+            // Menampilkan judul gambar dengan efek fade in dan fade out
+            $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            
+            // Jika nomor gambar mencapai 3 (gambar terakhir), kembali ke gambar pertama
+            if (i == 3) {
+                i = 0;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="slider"> <!-- Elemen untuk slideshow -->
+        <img id="sliderImage1" src="img/gambar1.jpg"> <!-- Gambar pertama dalam slideshow -->
+        <div class="slidertitle" id="title1">Gambar1</div> <!-- Judul gambar pertama -->
+        <img id="sliderImage2" src="img/gambar2.jpg"> <!-- Gambar kedua dalam slideshow -->
+        <div class="slidertitle" id="title2">Gambar2</div> <!-- Judul gambar kedua -->
+        <img id="sliderImage3" src="img/gambar3.jpg"> <!-- Gambar ketiga dalam slideshow -->
+        <div class="slidertitle" id="title3">Gambar3</div> <!-- Judul gambar ketiga -->
+    </div>
+</body>
+
+</html>

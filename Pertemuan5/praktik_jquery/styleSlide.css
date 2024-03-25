@@ -1,3 +1,4 @@
+/* mengatur elemen dengan id kotak2 dan id flip */
 #kotak2, #flip {
     padding:5px;
     text-align:center;
@@ -5,6 +6,7 @@
     border: solid 2px #e0e4cc;
     border-radius: 5px;
 }
+/* mengatur elemen dengan id kotak2 */
 #kotak2 {
     padding: 50px;
 }   

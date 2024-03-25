@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <style>
-
+        #paragraf {
+            width: 600px;
+            height: 80px;
+            background-color: pink; /* Memberikan warna latar belakang pink */
+            line-height: 80px; /* Menetapkan jarak antara baris sesuai dengan tinggi elemen */
+            text-align: center; /* Posisi teks menjadi tengah */
+            font-size: 30px; /* Ukuran font 30px */
+        }
     </style>
-    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
-        $(document).ready(function() {
-            $("#paragraf").click(function() {
-                $("#paragraf").css("color", "white");
+        $(document).ready(function () { // Fungsi yang dieksekusi setelah dokumen HTML selesai dimuat
+            $("#paragraf").click(function () { // Ketika elemen dengan ID "paragraf" diklik
+                $("#paragraf").css("color", "white"); // Mengubah warna teks menjadi putih
             });
-            $("#paragraf").mouseover (function() {
-                $("#paragraf").css("background-color", "silver"); 
+            $("#paragraf").mouseover(function () { // Ketika kursor mouse diarahkan ke elemen dengan ID "paragraf"
+                $("#paragraf").css("background-color", "silver"); // Mengubah warna latar belakang menjadi silver
             });
-            $("#paragraf").mouseout (function() {
-                $("#paragraf").css("background-color", "blue"); 
+            $("#paragraf").mouseout(function () { // Ketika kursor mouse keluar dari elemen dengan ID "paragraf"
+                $("#paragraf").css("background-color", "blue"); // Mengubah warna latar belakang menjadi biru
             });
-            $("#paragraf").dblclick(function() {
-                $("#paragraf").css("border", "solid 3px black"); 
+            $("#paragraf").dblclick(function () { // Ketika elemen dengan ID "paragraf" di-double click
+                $("#paragraf").css("border", "solid 3px black"); // Menambah garis tepi dengan ketebalan 3px dan warna hitam
             });
         });
     </script>
 </head>
 <body>
-    <p id="paragraf">Praktikum Minggu ke-4 JQuery</p>
+    <p id="paragraf">Praktikum Minggu ke-4 JQuery</p> <!-- Elemen paragraf dengan ID "paragraf" -->
 </body>
 </html>

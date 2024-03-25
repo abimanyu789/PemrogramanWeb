@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Memuat stylesheet CSS -->
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
-        $(document).ready(function(){
-            $(".tomboll").click(function() { 
-                $("div").hide(); 
+        $(document).ready(function(){ // Fungsi yang dieksekusi setelah dokumen HTML selesai dimuat
+            $(".tombol1").click(function() { // Ketika tombol dengan kelas "tomboll" diklik
+                $("div").hide(); // Semua elemen div disembunyikan
             });
-            $(".tombol2").click(function() { 
-                $("div").show();
+            $(".tombol2").click(function() { // Ketika tombol dengan kelas "tombol2" diklik
+                $("div").show(); // Semua elemen div ditampilkan
             });
-            $(".tombol3").click(function() {
-                $("#divl").fadeOut();
-                $("#div2").fadeOut("slow");
-                $("#div3").fadeOut(3000);
+            $(".tombol3").click(function() { // Ketika tombol dengan kelas "tombol3" diklik
+                $("#divl").fadeOut(); // Elemen dengan ID "divl" diberi efek fadeOut
+                $("#div2").fadeOut("slow"); // Elemen dengan ID "div2" diberi efek fadeOut dengan kecepatan "slow"
+                $("#div3").fadeOut(3000); // Elemen dengan ID "div3" diberi efek fadeOut dengan durasi 3000ms
             });
-            $(".tombol4").click(function() {
-                $("#divl").fadeIn();
-                $("#div2").fadeIn("slow");
-                $("#div3").fadeIn (3000);
+            $(".tombol4").click(function() { // Ketika tombol dengan kelas "tombol4" diklik
+                $("#divl").fadeIn(); // Elemen dengan ID "divl" diberi efek fadeIn
+                $("#div2").fadeIn("slow"); // Elemen dengan ID "div2" diberi efek fadeIn dengan kecepatan "slow"
+                $("#div3").fadeIn(3000); // Elemen dengan ID "div3" diberi efek fadeIn dengan durasi 3000ms
             });
-            $(".tombol5").click(function() {
-                $("#divl").fadeTo("slow", 0.15);
-                $("#div2").fadeTo("slow", 0.4);
-                $("#div3").fadeTo("slow", 0.7);
+            $(".tombol5").click(function() { // Ketika tombol dengan kelas "tombol5" diklik
+                $("#divl").fadeTo("slow", 0.15); // Elemen dengan ID "divl" diberi efek fadeTo dengan kecepatan "slow" dan opacity 0.15
+                $("#div2").fadeTo("slow", 0.4); // Elemen dengan ID "div2" diberi efek fadeTo dengan kecepatan "slow" dan opacity 0.4
+                $("#div3").fadeTo("slow", 0.7); // Elemen dengan ID "div3" diberi efek fadeTo dengan kecepatan "slow" dan opacity 0.7
             });
         });
     </script>
 </head>
 <body>
-    <div id="divl" class="kotak"></div> <br><br>
-    <div id="div2" class="kotak"></div> <br><br>
-    <div id="div3" class="kotak"></div> <br><br>
-    <button class="tomboll">Sembunyikan</button>
-    <button class="tombol2">Tampilkan</button>
-    <button class="tombol3">Fade Out</button>
-    <button class="tombol4">Fade In</button>
-    <button class="tombol5">Fade To</button>
+    <div id="divl" class="kotak"></div> <!-- Elemen div dengan ID "divl" dan kelas "kotak" -->
+    <br><br>
+    <div id="div2" class="kotak"></div> <!-- Elemen div dengan ID "div2" dan kelas "kotak" -->
+    <br><br>
+    <div id="div3" class="kotak"></div> <!-- Elemen div dengan ID "div3" dan kelas "kotak" -->
+    <br><br>
+    <button class="tombol1">Sembunyikan</button> <!-- Tombol untuk menyembunyikan elemen div -->
+    <button class="tombol2">Tampilkan</button> <!-- Tombol untuk menampilkan elemen div -->
+    <button class="tombol3">Fade Out</button> <!-- Tombol untuk efek fadeOut -->
+    <button class="tombol4">Fade In</button> <!-- Tombol untuk efek fadeIn -->
+    <button class="tombol5">Fade To</button> <!-- Tombol untuk efek fadeTo -->
 </body>
 </html>

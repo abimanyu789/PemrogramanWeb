@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
-        $(document).ready(function(){
-            $("button").click(function(){
-                $("h2").hide();
-                $(".subjudul").hide();
-                $("#paragraf").hide();
-                $("#paragraf.dua").hide();
-                $("div p.paragraf").hide();
+        $(document).ready(function(){ // Fungsi yang dieksekusi setelah dokumen HTML selesai dimuat
+            $("button").click(function(){ // Ketika tombol di klik
+                $("h2").hide(); // Semua elemen h2 disembunyikan
+                $(".subjudul").hide(); // Semua elemen dengan kelas "subjudul" disembunyikan
+                $("#paragraf").hide(); // Elemen dengan ID "paragraf" disembunyikan
+                $("#paragraf.dua").hide(); // Elemen dengan ID "paragraf" dan kelas "dua" disembunyikan
+                $("div p.paragraf").hide(); // Semua elemen p dengan kelas "paragraf" yang berada di dalam div disembunyikan
             });
         });
     </script>
 </head>
 <body>
-    <h2> Ini adalah Judul Bab</h2>
-    <h3 class="subjudul"> Ini adalah Sub Judul Bab</h3>
-    <p id="paragraf"> Ini adalah paragraf pertama </p>
-    <p id="paragraf" class="dua"> Ini adalah paragraf kedua </p>
+    <h2> Ini adalah Judul Bab</h2> <!-- Elemen h2 -->
+    <h3 class="subjudul"> Ini adalah Sub Judul Bab</h3> <!-- Elemen h3 dengan kelas "subjudul" -->
+    <p id="paragraf"> Ini adalah paragraf pertama </p> <!-- Elemen p dengan ID "paragraf" -->
+    <p id="paragraf" class="dua"> Ini adalah paragraf kedua </p> <!-- Elemen p dengan ID "paragraf" dan kelas "dua" -->
     <div>
-        <p class="paragraf">
+        <p class="paragraf"> <!-- Elemen p dengan kelas "paragraf" -->
             Ini adalah paragraf ketiga
         </p>
     </div>
-    <p> Ini paragraf yang akan tetap ditampilkan</p> 
-    <button> Klik Saya! </button>
+    <p> Ini paragraf yang akan tetap ditampilkan</p>  <!-- teks -->
+    <button> Klik Saya! </button> <!-- Tombol -->
 </body>
 </html>

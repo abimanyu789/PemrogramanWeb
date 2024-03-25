@@ -1,13 +1,17 @@
-.kotak{
+/* mengatur elemen dengan  class kotak */
+.kotak{ 
     width:80px;
     height:80px;
 }
+/* mengatur elemen dengan  id div1 */
 #divl{
     background-color:red;
 }
+/* mengatur elemen dengan  id div2 */
 #div2 {
     background-color:green;
 }
+/* mengatur elemen dengan  id div3 */
 #div3{
     background-color:blue;
 }

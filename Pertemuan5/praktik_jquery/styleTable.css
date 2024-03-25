@@ -1,17 +1,22 @@
+/* mengatur elemen dengan tag form */
 form{
     margin: 20px 0;
 }
+/* mengatur elemen dengan tag form input dan button */
 form input, button{
     padding: 5px;
 }
+/* mengatur elemen dengan tag table */
 table{
     width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
 }
+/* mengatur elemen dengan tag table, th, td */
 table, th, td{
     border: 1px solid #cdcdcd;
 }
+/* mengatur elemen dengan tag table th, table td */
 table th, table td{
     padding: 10px;
     text-align: left;

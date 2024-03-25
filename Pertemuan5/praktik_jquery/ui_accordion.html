@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- memuat stylesheet dari jQuery UI -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css"> 
+    <!-- memuat library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <!-- memuat library jQuery UI -->
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script>
+        // fungsi jQuery yang akan dijalankan setelah dokumen siap
+        $(function () {
+            // Mengaktifkan fungsi accordion dari jQuery UI pada elemen dengan ID "jQuery_accordion"
+            $("#jQuery_accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Elemen div dengan ID "jQuery_accordion" untuk digunakan dalam accordion -->
+    <div id="jQuery_accordion">
+        <h3>header 1</h3>   <!-- Judul bagian 1 dalam accordion -->
+        <p> This is section 1.
+            Place your content here in paragraphs or use div elements etc. </p>
+        <h3>header 2</h3>   <!-- Judul bagian 2 dalam accordion -->
+        <p> This is section 2. You can also include images like this: <br> <img src="img/gambar.jpg" /></p>
+        <h3>header 3</h3>   <!-- Judul bagian 3 dalam accordion -->
+        <div>
+            <p>This is section 3. Content can include listing as well.
+            <ol>
+                <!-- item yang ada dalam daftar bagian 3 -->
+                <li>item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

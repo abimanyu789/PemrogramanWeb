@@ -1,7 +1,9 @@
+/* mengatur elemen dengan class important */
 .important{
     font-weight: bold;
     font-size: xx-large;
 }
+/* mengatur elemen dengan class blue */
 .blue{
     color: blue;
 } 

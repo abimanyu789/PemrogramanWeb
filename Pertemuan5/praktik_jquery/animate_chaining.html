@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styleAnimate.css">
-    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css"> <!-- Memuat stylesheet CSS untuk animasi -->
+    <script src="jquery-3.7.1.js"></script> <!-- Memuat library jQuery -->
     <script>
-        $(document).ready(function(){
-            $("button").click(function(){ 
-                $(".box")
-                    .animate({width: "300px"})
-                    .animate({height: "300px"})
-                    .animate({marginLeft: "150px"})
-                    .animate({borderWidth: "10px"})
-                    .animate({opacity: 0.5});
+        $(document).ready(function(){ // Fungsi yang dieksekusi setelah dokumen HTML selesai dimuat
+            $("button").click(function(){ // Ketika tombol di klik
+                $(".box") // Memilih elemen dengan kelas "box"
+                    .animate({width: "300px"}) // Animasi untuk mengubah lebar menjadi 300px
+                    .animate({height: "300px"}) // Animasi untuk mengubah tinggi menjadi 300px
+                    .animate({marginLeft: "150px"}) // Animasi untuk mengubah jarak kiri menjadi 150px
+                    .animate({borderWidth: "10px"}) // Animasi untuk mengubah lebar border menjadi 10px
+                    .animate({opacity: 0.5}); // Animasi untuk mengubah opacity menjadi 0.5
             });
         });
     </script>
 </head>
 <body>
-    <button type="button">Start Animation</button>
-    <div class="box"></div>
+    <button type="button">Start Animation</button> <!-- Tombol untuk memulai animasi -->
+    <div class="box"></div> <!-- Kotak yang akan di animasikan -->
 </body>
 </html>
