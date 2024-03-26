@@ -10,4 +10,4 @@ echo "Panjang karakter: " .strlen($loremIpsum). "<br>";     // menampilkan panja
 echo "Panjang kata: " .str_word_count($loremIpsum). "<br>"; // menampilkan panjang/banyak kata dari variabel
 echo "<p>" .strtoupper($loremIpsum). "</p>";    // menampilkan isi variabel dengan mengubah menjadi huruf kapital pada setiap hurufnya
 echo "<p>" .strtolower($loremIpsum). "</p>";    //menampilkan isi variabel dengan mengubah menjadi huruf kecil pada setiap hurufnya
-?>
+?> 

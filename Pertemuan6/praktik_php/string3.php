@@ -10,4 +10,4 @@ $pesan = implode(" ", $pesanPerKata);
 
 // menampilkan isi variabel pesan 
 echo $pesan ."<br>";
-?>
+?> 

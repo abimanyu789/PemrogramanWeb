@@ -33,7 +33,7 @@
         'domisili' => 'Malang',
         'jenis_kelamin' => 'Perempuan'
     ];
-    ?>
+    ?> 
     <!-- Tampilan tabel -->
     <h2>Informasi Dosen</h2>
     <table>

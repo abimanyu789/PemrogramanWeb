@@ -9,4 +9,4 @@
         echo date("h:i:sa");    // Menampilkan waktu dalam format jam:menit:detik:am/pm
     ?>
 </body>
-</html>
+</html> 

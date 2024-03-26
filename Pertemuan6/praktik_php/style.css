@@ -11,4 +11,4 @@ th, td {
 /* Pemilihan baris genap untuk memberikan warna latar belakang */
 tr:nth-child(even) {
     background-color: #f2f2f2;
-}
+} 

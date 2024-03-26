@@ -21,4 +21,4 @@ function tampilkanAngka (int $jumlah, int $indeks = 1) {
 }
 echo"<hr>";
 tampilkanAngka(20); //memanggil fungsi dengan menginputkan nilai dalam parameter
-?>
+?> 

@@ -15,4 +15,4 @@
         echo "Today is " . date("l");
     ?>
 </body>
-</html>
+</html> 

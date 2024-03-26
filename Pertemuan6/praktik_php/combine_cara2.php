@@ -6,4 +6,4 @@
     echo '<p>Tanggal Hari ini : ' . date('d M Y') . '</p>';
     echo '</body>';
     echo '</html>';
-?>
+?> 

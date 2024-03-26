@@ -12,7 +12,7 @@
         <tr>
             <th>Judul Film</th>
             <th>Tahun</th>
-            <th>Rating</th>
+            <th>Rating</th> 
         </tr>
         <?php
             // Mendefinisikan array multidimensional yang berisi data film
