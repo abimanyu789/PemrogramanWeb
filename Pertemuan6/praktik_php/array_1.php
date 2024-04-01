@@ -12,4 +12,4 @@
     echo $Listdosen[1] . "<br>";    // Menampilkan elemen array pada indeks ke-1
     ?> 
 </body>
-</html>
+</html> 
