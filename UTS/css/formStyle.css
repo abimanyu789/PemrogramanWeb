@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background: #ffa12c;
+}
+
+.container {
+    width: 80%;
+    max-width: 550px;
+    background: #fcffa7;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid #ffa12c;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: large;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select, button {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(57, 57, 57);
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+.radio-container {
+    display: inline-block;
+}
+.radio-container label {
+    display: block;
+}
+.radio-container input[type="radio"] {
+    margin-bottom: 10px;
+}
+.checkbox-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+button {
+    background: #ffa12c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background: rgba(214, 86, 64, 1);
+}
